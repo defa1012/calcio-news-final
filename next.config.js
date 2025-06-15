@@ -1,6 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
+import '../styles/globals.css';
+import 'https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css';
 
-module.exports = nextConfig;
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
